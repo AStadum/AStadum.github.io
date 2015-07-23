@@ -1,8 +1,8 @@
 <?php
 
 	// Mail settings
-	$to = "web-master72@yandex.ru";
-	$subject = "Leaff contact form";
+	$to = "anders.stadum@gmail.com";
+	$subject = "Hanatoro contact form";
 
 	if (isset($_POST["name"]) && isset($_POST["email"]) && isset($_POST["message"])) {
 
