@@ -116,11 +116,11 @@
 		 * Slideshow background
 		/* ---------------------------------------------- */
 
-		$('.slideshow').backstretch([
-			'assets/images/home-1.jpg',
-			'assets/images/home-2.jpg',
-			'assets/images/home-3.jpg'
-		], {duration: 3000, fade: 600});
+		// $('.slideshow').backstretch([
+		// 	'assets/images/home-1.jpg',
+		// 	'assets/images/home-2.jpg',
+		// 	'assets/images/home-3.jpg'
+		// ], {duration: 3000, fade: 600});
 
 		/* ---------------------------------------------- /*
 		 * Video background
