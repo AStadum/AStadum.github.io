@@ -1,0 +1,467 @@
+<div id="switcher">
+			<div class="content-switcher" >        
+				<h4>STYLE OPTIONS</h4>
+
+				<p>Color Skin:</p>
+				<ul style="width:150px;">            
+					<li><a href="#" onclick="setActiveStyleSheet('blue'); return false;" class="color" style="background-color:#50657B"></a></li><!-- default -->
+					<li><a href="#" onclick="setActiveStyleSheet('orange'); return false;" class="color" style="background-color:#F07057"></a></li>
+					<li><a href="#" onclick="setActiveStyleSheet('green'); return false;" class="color" style="background-color:#7E8344"></a></li>
+					<li><a href="#" onclick="setActiveStyleSheet('red'); return false;" class="color" style="background-color:#e93735"></a></li>
+					<li><a href="#" onclick="setActiveStyleSheet('pink'); return false;" class="color" style="background-color:#f73f69"></a></li>
+					<li><a href="#" onclick="setActiveStyleSheet('mauve'); return false;" class="color" style="background-color:#c91ac9"></a></li>
+					<li><a href="#" onclick="setActiveStyleSheet('yellow'); return false;" class="color" style="background-color:#f1c40f"></a></li>
+					<li><a href="#" onclick="setActiveStyleSheet('gray'); return false;" class="color" style="background-color:#333333"></a></li>
+				</ul>        
+
+				<p>Home Page Template:</p>
+				<div class="styled-select">
+					<select onchange="window.document.location.href=this.options[this.selectedIndex].value;">  
+						
+						<optgroup label="+ Personal">
+							<option selected="selected">01. Fullscreen Slider</option>
+							<option value="index-personal-half.html">02. Halfscreen Slider</option>
+							<option value="index-personal-half.html">03. Full Video</option>
+						</optgroup>
+
+						<optgroup label="+ Agency">
+							<option value="index-agency-full.html">01. Fullscreen Slider</option>
+							<option value="index-agency-half.html">02. Halfscreen Slider</option>
+							<option value="index-agency-video.html">03. Full Video</option>
+						</optgroup>
+
+						<optgroup label="+ Application">
+							<option value="index-application-full.html">01. Fullscreen Slider</option>
+							<option value="index-application-half.html">02. Halfscreen Slider</option>
+							<option value="index-application-video.html">03. Full Video</option>
+						</optgroup>
+
+						<optgroup label="Misc">
+							<option value="countdown-image.html">Count Down - Image</option>
+							<option value="countdown-video.html">Count Down - Video</option>
+							<option value="index-video-full.html">404 Not Found</option>
+							<option value="faq.html">Faq Page</option>
+							<option value="text-page.html">Default Text Page</option>
+						</optgroup>
+
+					</select>
+				</div>
+
+				<div class="switcher-links">
+					<a href="elements.html">elements.html</a>
+					<a href="typography.html">typography.html</a>
+					<a href="icons-fontawsome.html">icons-fontawsome.html</a>
+					<a href="icons-linecons.html">icons-linecons.html</a>
+				</div>
+
+				<div id="hideSwitcher">&times;</div>
+			</div>
+		</div>
+		<div id="showSwitcher"><i class="fa fa-tint"></i></div>
+
+
+		<li>
+						<div class="image-caption">
+							<hr /><hr />
+							<div class="inner">
+								<h2 class="bigtext strtoupper nomargin">Let's work together</h2>
+								<a class="btn btn-primary white nofill scrollTo" href="#services"><i class="fa fa-play"></i> High Quality Services</a>
+							</div>
+							<hr /><hr />
+						</div>
+
+						<!--<span class="overlay"></span>-->
+						<div style="background-image: url('assets/images/preview/slider/background.jpg');" class="fullscreen-img"></div>
+					</li>
+
+					<li>
+						<div class="image-caption">
+							<hr /><hr />
+							<div class="inner">
+								<h2 class="strtoupper nomargin">RESPONSIVE LAYOUT</h2>
+							</div>
+							<hr /><hr />
+						</div>
+
+						<!--<span class="overlay"></span>-->
+						<div style="background-image: url('assets/images/preview/slider/1.jpg');" class="fullscreen-img"></div>
+					</li>
+
+<section id="contact">
+			<div class="container">
+				<header class="text-center">
+					<h1>CONTACT</h1>
+				</header>
+
+				<div class="divider"><!-- lines divider --></div>
+
+				<article>
+					<p class="text-center big-paragraph">
+						Drop me a line or just say <strong><em>Hello!</em></strong>
+						<small class="fsize15 block">
+							Lorem ipsum dolor sit amet, <strong>consectetur adipiscing</strong> elit. <br />
+							Maecenas metus nulla, commodo a sodales sed, dignissim pretium nunc.
+						</small>
+					</p>
+				</article>
+
+				<article>
+
+					<!-- Alert -->
+					<div id="_sent_ok_" class="alert alert-success fade in fsize16 hide">
+						<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+						<span id="_msg_txt_"><strong>Thank You!</strong> Your message successfully sent!</span>
+					</div>
+
+					<!-- Form -->
+					<form id="contactForm" method="post" action="php/contact.php" class="white block form-inline">
+						<div class="row">
+							<div class="col-md-4"><input required class="fullwidth" type="text" name="contact_name" id="contact_name" value="" placeholder="NAME *" title="Name" /></div>
+							<div class="col-md-4"><input required class="fullwidth" type="email" name="contact_email" id="contact_email" value="" placeholder="EMAIL *" title="Email" /></div>
+							<div class="col-md-4"><input class="fullwidth" type="text" name="contact_subject" id="contact_subject" value="" placeholder="SUBJECT" title="subject" /></div>
+						</div>
+
+						<div class="row">
+							<div class="col-md-12"><textarea required class="fullwidth" rows="5" name="contact_comment" id="contact_comment" placeholder="MESSAGE *"></textarea></div>
+							<div class="col-md-12">
+								<input type="hidden" name="captcha" id="captcha" value="" /><!-- hidden field - humans should not see it, only spam bots will see it -->
+								<button id="contact_submit" class="btn btn-default">SEND MESSAGE</button>
+							</div>
+						</div>
+					</form>
+
+				</article>
+
+			</div>
+		</section>
+
+
+		<article>
+					<div class="row text-left">
+
+						<!-- Passion -->
+						<div class="col-md-4">
+							<h3>Passion</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas metus nulla, commodo a sodales sed, dignissim pretium nunc. Nam et lacus neque. Ut enim massa, sodales tempor convallis et, iaculis ac massa. Etiam suscipit nisl eget lorem pellentesque quis iaculis mi mattis.</p>
+						</div>
+
+
+						<!-- Precision -->
+						<div class="col-md-4">
+							<h3>Precision</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas metus nulla, commodo a sodales sed, dignissim pretium nunc. Nam et lacus neque. Ut enim massa, sodales tempor convallis et, iaculis ac massa. Etiam suscipit nisl eget lorem pellentesque quis iaculis mi mattis.</p>
+						</div>
+
+
+						<!-- Simplicity -->
+						<div class="col-md-4">
+							<h3>Simplicity</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas metus nulla, commodo a sodales sed, dignissim pretium nunc. Nam et lacus neque. Ut enim massa, sodales tempor convallis et, iaculis ac massa. Etiam suscipit nisl eget lorem pellentesque quis iaculis mi mattis.</p>
+						</div>
+
+					</div>
+				</article>
+
+
+				<!-- WORK -->
+		<section id="work" class="alternate arrow-down">
+			<div class="container">
+				<header class="text-center">
+					<h1>OUR WORK</h1>
+				</header>
+
+				<div class="divider"><!-- lines divider --></div>
+
+				<article>
+					<p>
+						Bacon ipsum dolor sit amet meatball shank pork chop capicola fatback pork loin sirloin flank. Andouille tongue corned beef rump pork loin shank meatball capicola turducken venison shankle kevin pancetta tri-tip boudin. Bacon ipsum dolor sit amet meatball shank pork chop capicola fatback pork loin sirloin flank.
+					</p>
+				</article>
+
+
+				<div id="portfolio" class="text-center animate_fade_in">
+
+					<!-- PORTFOLIO FILTER -->
+					<div class="text-center">
+						<ul class="nav nav-tabs bstrap-tabs isotope-filter" data-sort-id="isotope-list" data-option-key="filter">
+							<li data-option-value="*" class="active"><a href="#">ALL</a></li>
+							<li data-option-value=".image"><a href="#">IMAGES</a></li>
+							<li data-option-value=".brand"><a href="#">BRANDING</a></li>
+							<li data-option-value=".video"><a href="#">VIDEO</a></li>
+						</ul>
+					</div>
+					<!-- /PORTFOLIO FILTER -->
+
+
+					<div class="row">
+
+						<ul class="sort-destination isotope" data-sort-id="isotope-list">
+
+							<li class="isotope-item col-sm-6 col-md-4 image"><!-- item -->
+								<a class="popup-image" href="assets/images/preview/slider/1.jpg">
+									<img src="assets/images/1x1.png" class="img-responsive" data-src="holder.js/360x360/#676767:#555555/auto/" alt="img" />
+									<div class="caption">
+										<i class="rounded fa fa-camera"></i>
+										<h3>PROJECT TITLE</h3>
+										<p>Image Popup</p>
+									</div>
+								</a>
+							</li>
+
+							<li class="isotope-item col-sm-6 col-md-4 video"><!-- item -->
+								<a class="popup-video" href="https://www.youtube.com/watch?v=1awBrKHQL_w">
+									<img src="assets/images/1x1.png" class="img-responsive" data-src="holder.js/360x360/#676767:#555555/auto/" alt="img" />
+									<div class="caption">
+										<i class="rounded fa fa-film"></i>
+										<h3>PROJECT TITLE</h3>
+										<p>Youtube Video</p>
+									</div>
+								</a>
+							</li>
+
+							<li class="isotope-item col-sm-6 col-md-4 video brand"><!-- item -->
+								<a class="popup-video" href="http://vimeo.com/23630702">
+									<img src="assets/images/1x1.png" class="img-responsive" data-src="holder.js/360x360/#676767:#555555/auto/" alt="img" />
+									<div class="caption">
+										<i class="rounded fa fa-film"></i>
+										<h3>PROJECT TITLE</h3>
+										<p>Vimeo Video</p>
+									</div>
+								</a>
+							</li>
+
+							<li class="isotope-item col-sm-6 col-md-4 brand"><!-- item -->
+								<a class="external ajax-project" href="project-external-1.html">
+									<img src="assets/images/1x1.png" class="img-responsive" data-src="holder.js/360x360/#676767:#555555/auto/" alt="img" />
+									<div class="caption">
+										<i class="rounded fa fa-link"></i>
+										<h3>PROJECT TITLE</h3>
+										<p>External Project 1</p>
+									</div>
+								</a>
+							</li>
+
+							<li class="isotope-item col-sm-6 col-md-4 brand"><!-- item -->
+								<a class="external ajax-project" href="project-external-2.html">
+									<img src="assets/images/1x1.png" class="img-responsive" data-src="holder.js/360x360/#676767:#555555/auto/" alt="img" />
+									<div class="caption">
+										<i class="rounded fa fa-link"></i>
+										<h3>PROJECT TITLE</h3>
+										<p>External Project 2</p>
+									</div>
+								</a>
+							</li>
+
+							<li class="isotope-item col-sm-6 col-md-4 brand"><!-- item -->
+								<a class="external ajax-project" href="project-external-3.html">
+									<img src="assets/images/1x1.png" class="img-responsive" data-src="holder.js/360x360/#676767:#555555/auto/" alt="img" />
+									<div class="caption">
+										<i class="rounded fa fa-link"></i>
+										<h3>PROJECT TITLE</h3>
+										<p>External Project 3</p>
+									</div>
+								</a>
+							</li>
+
+						</ul>
+					</div>
+
+				</div>
+
+			</div>
+		</section>
+		<!-- /WORK -->
+
+		<!-- CALL NOW -->
+		<section class="util-row">
+			<div class="container text-center">
+
+				<header data-animation="bounceIn">
+					<h1 class="no-text-transform italic">Only one step to work together</h1>
+				</header>
+
+				<article class="text-center">
+					<h2>1-800-555-12345</h2>
+					<p>CALL ME NOW - or - <a href="#contact" class="scrollTo">MESSAGE ME</a></p>
+				</article>
+
+			</div>
+		</section>
+		<!-- CALL NOW -->
+
+
+
+		<!-- SERVICES -->
+		<section id="services">
+
+			<header class="text-center">
+				<h1>SERVICES</h1>
+			</header>
+
+			<div class="divider"><!-- lines divider --></div>
+
+			<div class="inner-cover" style="background-image:url('assets/images/preview/slider/3.jpg')">
+
+				<!--
+					Optional - raster or overlay backgrounds, for brighten images.
+					<span class="raster"></span>
+
+					Default overlay: black, opacity 0.5
+					Gray overlay: #212121 , opacity 0.9
+					Remove 'gray' class for default overlay
+
+					<span class="overlay gray"></span>
+				-->
+				<span class="overlay gray"></span>
+
+
+				<div class="container text-center">
+
+					<ul class="services animate_from_bottom">
+						<li><!-- service 1 -->
+							<a href="#service-1" class="service yellow scrollTo">
+								<i class="icon-globe"></i>
+								<h3>Corporate Identity</h3>
+							</a>
+						</li>
+
+						<li><!-- service 2 -->
+							<a href="#service-2" class="service orange scrollTo">
+								<i class="icon-eye"></i>
+								<h3>Graphic Design</h3>
+							</a>
+						</li>
+
+						<li><!-- service 3 -->
+							<a href="#service-3" class="service mauve scrollTo">
+								<i class="fa fa-code"></i>
+								<h3>Development</h3>
+							</a>
+						</li>
+
+						<li><!-- service 4 -->
+							<a href="#service-4" class="service green scrollTo">
+								<i class="icon-videocam"></i>
+								<h3>Video</h3>
+							</a>
+						</li>
+
+						<li><!-- service default -->
+							<a href="#service-4" class="service scrollTo">
+								<i class="fa fa-smile-o"></i>
+								<h3>Default</h3>
+							</a>
+						</li>
+					</ul>
+
+					<div class="services-nav">
+						<a id="service-prev" href="#"><i class="fa fa-chevron-left"></i></a>
+						<a id="service-next" href="#"><i class="fa fa-chevron-right"></i></a>
+					</div>
+
+				</div>
+			</div>
+
+
+			<!--
+				BOOTSTRAP GRID USED
+				http://getbootstrap.com/css/#grid
+			-->
+			<!-- service 1 -->
+			<article id="service-1" class="container service-desc animate_fade_in">
+				<div class="row">
+					<div class="col-xs-12 col-md-3 text-left">
+						<h3><i class="yellow fa fa-stop"></i> Corporate Identity</h3>
+					</div>
+					<div class="col-xs-6 col-md-3 text-left">
+						<ul>
+							<li>Naming</li>
+							<li>Logo design</li>
+							<li>Brandbooks</li>
+						</ul>
+					</div>
+					<div class="col-xs-6 col-md-6 text-left">
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas metus nulla, commodo a sodales sed, dignissim pretium nunc. Nam et lacus neque. Ut enim massa, sodales tempor convallis et, iaculis ac massa.</p>
+					</div>
+				</div>
+			</article>
+
+			<!-- service 2 -->
+			<article id="service-2" class="container service-desc animate_fade_in">
+				<div class="row">
+					<div class="col-xs-12 col-md-3 text-left">
+						<h3><i class="orange fa fa-stop"></i> Graphic Design</h3>
+					</div>
+					<div class="col-xs-6 col-md-6 text-left">
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas metus nulla, commodo a sodales sed, dignissim pretium nunc. Nam et lacus neque. Ut enim massa, sodales tempor convallis et, iaculis ac massa.</p>
+					</div>
+					<div class="col-xs-6 col-md-3 text-right">
+						<ul>
+							<li>2D &amp; 3D Animation</li>
+							<li>TV Spots</li>
+							<li>Corporate videos</li>
+						</ul>
+					</div>
+				</div>
+			</article>
+
+			<!-- service 3 -->
+			<article id="service-3" class="container service-desc animate_fade_in">
+				<div class="row">
+					<div class="col-xs-12 col-md-3 text-left">
+						<h3><i class="mauve fa fa-stop"></i> Development</h3>
+					</div>
+					<div class="col-xs-12 col-md-9 text-left">
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas metus nulla, commodo a sodales sed, dignissim pretium nunc. Nam et lacus neque. Etiam suscipit nisl eget lorem pellentesque quis iaculis mi mattis.</p>
+					</div>
+				</div>
+			</article>
+
+			<!-- service 4 -->
+			<article id="service-4" class="container service-desc animate_fade_in">
+				<div class="row">
+					<div class="col-xs-12 col-md-3 text-left">
+						<h3><i class="green fa fa-stop"></i> Video</h3>
+					</div>
+					<div class="col-xs-6 col-md-3 text-left">
+						<ul>
+							<li>2D &amp; 3D Animation</li>
+							<li>TV Spots</li>
+							<li>Corporate videos</li>
+						</ul>
+					</div>
+					<div class="col-xs-4 col-md-3 text-left">
+						<ul>
+							<li>Adverts</li>
+							<li>Packaging design</li>
+							<li>Stands &amp; Rollups</li>
+						</ul>
+					</div>
+					<div class="col-xs-4 col-md-3 text-left">
+						<ul>
+							<li>Adverts</li>
+							<li>Packaging design</li>
+							<li>Stands &amp; Rollups</li>
+						</ul>
+					</div>
+				</div>
+			</article>
+
+		</section>
+		<!-- SERVICES -->
+
+<div class="col-md-4 quick-hover">
+							<div class="quick-item">
+								<figure class="media-preview"><!-- image -->
+									<img src="assets/images/1x1.png" class="img-responsive" data-src="holder.js/360x200/#676767:#555555/auto/" alt="img" />
+								</figure>
+
+								<h4>Simple but powerful</h4>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas metus nulla, commodo a sodales sed, dignissim pretium nunc. Nam et lacus neque.</p>
+								<a href="blog-post.html" class="btn btn-xs"><i class="fa fa-sign-out"></i> READ MORE</a>
+							</div>
+						</div>
+
+<article class="text-center" data-animation="bounceIn">
+					<a href="blog.html" class="plusNav" title="more from blog">+</a> 
+				</article>
