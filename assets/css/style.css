@@ -336,7 +336,21 @@ a,
 	overflow: hidden;
 }
 
-.section, .callout {
+.callout {
+	position: relative;
+	padding: 120px 0;
+	background: #3B9DF8;
+
+}
+
+.section {
+	position: relative;
+	padding: 120px 0;
+	background: #3B9DF8;
+	height: 100vh;
+}
+
+.resumeItems {
 	position: relative;
 	padding: 120px 0;
 	background: #3B9DF8;
