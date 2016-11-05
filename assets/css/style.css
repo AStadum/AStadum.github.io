@@ -329,7 +329,7 @@ a,
 }
 
 /* ---------------------------------------------- /*
- * General (BIG SECTION BACKGROUND EB6565 3B9DF8)
+ * General (BIG SECTION BACKGROUND EB6565 3B9DF8) height: 100vh; for section
 /* ---------------------------------------------- */
 
 .wrapper {
@@ -347,7 +347,6 @@ a,
 	position: relative;
 	padding: 120px 0;
 	background: #3B9DF8;
-	height: 100vh;
 }
 
 .resumeItems {
