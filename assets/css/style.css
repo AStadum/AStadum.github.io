@@ -8,11 +8,11 @@
 /* ---------------------------------------------- */
 
 @import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
-@import url(http://fonts.googleapis.com/css?family=Raleway:400,300,700);
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,300,700);
 
 body {
-	font: 300 15px/1.6 'Raleway', serif, sans-serif;
-	color: #FFF;
+	font: 300 20px/1.6 'Roboto', sans-serif;
+	color: #545454;
 }
 
 img {
@@ -21,11 +21,11 @@ img {
 }
 
 a {
-	color: #FFF;
+	color: #EF4836;
 }
 
 a:hover {
-	color: #EF4836;
+	color: #C4C4C4;
 }
 
 /* ---------------------------------------------- /*
@@ -35,7 +35,7 @@ a:hover {
 h1, h2, h3, h4, h5, h6 {
 	font: 400 46px/1.2 'Montserrat', serif, sans-serif;
 	margin: 5px 0 5px;
-	color: #FFF;
+	color: #222;
 }
 
 h1 {
@@ -56,8 +56,8 @@ h3 {
 }
 
 h4 {
-	font-size: 16px;
-	margin: 5px 0 10px;
+	font-size: 22px;
+	margin: 5px 0 15px;
 }
 
 h5 {
@@ -157,7 +157,6 @@ a,
 	font-size: 14px;
 	padding: 17px 27px;
 	border: 0;
-	color: #FFF;
 }
 
 .btn:hover, .btn:focus, .btn:active, .btn.active {
@@ -209,7 +208,7 @@ a,
 }
 
 .btn-custom-2 {
-	border: 2px solid #FFF;
+	border: 2px solid #222;
 }
 
 .btn-custom-1:hover, .btn-custom-1:focus, .btn-custom-1:active, .btn-custom-1.active {
@@ -223,8 +222,6 @@ a,
 	border: 2px solid #222;
 	color: #FFF;
 }
-
-
 
 /* ---------------------------------------------- /*
  * Alerts style
@@ -329,43 +326,34 @@ a,
 }
 
 /* ---------------------------------------------- /*
- * General (BIG SECTION BACKGROUND EB6565 3B9DF8) height: 100vh; for section
+ * General
 /* ---------------------------------------------- */
+
+.imageMarge {
+	margin: 0 0 60px;
+}
 
 .wrapper {
 	overflow: hidden;
 }
 
-.callout {
+.section, .callout {
 	position: relative;
 	padding: 120px 0;
-	background: #3B9DF8;
-
-}
-
-.section {
-	position: relative;
-	padding: 120px 0;
-	background: #3B9DF8;
-}
-
-.resumeItems {
-	position: relative;
-	padding: 120px 0;
-	background: #3B9DF8;
 }
 
 .callout {
-	background: #EB6565;
+	background: #F5F5F5;
 }
 
 .headline {
 	margin: 0 0 60px;
+	text-align: center;
 }
 
 .headline p {
 	font-weight: 700;
-	color: #FFF;
+	color: #C4C4C4;
 }
 
 .callout-btn {
@@ -396,10 +384,6 @@ a,
 h3 > .fa {
 	font-size: 24px;
 	margin-right: 6px;
-}
-
-.fa{
-	color: white;
 }
 
 .mouse-icon {
@@ -469,7 +453,7 @@ h3 > .fa {
 .navbar-custom .nav li.active {
 	background: none;
 	outline: 0;
-	color: #FFF;
+	color: #EF4836;
 }
 
 .navbar-custom .navbar-brand {
@@ -493,7 +477,7 @@ h3 > .fa {
 
 .navbar-color,
 .custom-collapse {
-	background: #EB6565;
+	background: #FFF;
 	box-shadow: 0 0 4px rgba(0, 0, 0, .2);
 	padding: 0;
 }
@@ -504,11 +488,11 @@ h3 > .fa {
 .navbar-color .navbar-nav .dropdown-menu > li > a,
 .custom-collapse .navbar-nav > li > a,
 .custom-collapse .navbar-nav .dropdown-menu > li > a {
-	color: #FFF;
+	color: #222;
 }
 
 .navbar-color .navbar-nav > li.active {
-	border-bottom: 3px solid #FFF;
+	border-bottom: 3px solid #222;
 }
 
 .custom-collapse .navbar-nav {
@@ -532,7 +516,6 @@ h3 > .fa {
 	padding: 260px 0 160px 0;
 	text-align: center;
 	color: #FFF;
-	height: 100vh;
 }
 
 #intro h1, #intro h2, #intro h3, #intro h4, #intro h5, #intro h6 {
@@ -574,7 +557,7 @@ h3 > .fa {
 }
 
 .widget-social li a {
-	background: #EB6565;
+	background: #2e2e2e;
 	text-align: center;
 	display: block;
 	width: 40px;
@@ -694,10 +677,15 @@ h3 > .fa {
 /* ---------------------------------------------- /*
  * Contact
 /* ---------------------------------------------- */
+#intro {
+	background: #18191a
+}
+
 
 #contact {
 	background: #18191a;
 	color: #FFF;
+	text-align: center;
 }
 
 #contact h1, #contact h2, #contact h3, #contact h4, #contact h5, #contact h6 {
@@ -713,15 +701,14 @@ h3 > .fa {
 }
 
 #footer {
-	background: #EB6565;
+	background: #141414;
 	padding: 20px 0;
-	color: #EB6565;
+	color: #FFF;
 }
 
 #footer .copy {
 	font-size: 12px;
 	margin: 5px 0;
-	color: #FFF;
 }
 
 /* ---------------------------------------------- /*
